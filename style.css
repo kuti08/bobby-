@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT STYLE */
+:root{
+    /* BG Color */
+    --bgcolor: #e71800;
+    --wcolor: #fff;
+    --bcolor: #000;
+
+    /* Font*/
+    --bfw: 700;
+}
+
+/* CSS UNIVERSAL SET/STYLE */
+body {
+font-family: 'lato', sans-serif;
+padding: 0;
+margin: 0;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    font-size: 16px;
+}
+
+button  {
+    color: #ffffff;
+    background-color: #e71800;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 10rem;
+    height: 20;
+    cursor: pointer;
+    justify-content: end;
+}
+
+
+/* CSS STYLE */
+.navigation  {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;    
+}
+.slicknav {
+display: flex;
+column-gap: 20px;
+align-items: center;
+}
+
+h1,h2,h3 {
+    font-weight: var(--bfw);
+}
+
+.more-type h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.8px;
+}
+
+.active {
+    color: #e71800;
+}
+
+.content-description {
+    height: 550px;
+    color: #fff;
+    background-image: url('img/Rectangle1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 6rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 57.6px;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    max-width: 30rem;
+}
+
+.book {
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+
+
+/*main*/
+.welcome{
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-title{
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 700;
+}
+
+.welcome-content {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* about logistics solution */
+.logistics {
+    display: grid;
+    grid-template-columns: repeat(2,  2fr);
+    grid-template-rows: minmax(200px, auto);
+    column-gap: 20px;
+    padding-top: 30px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.img{
+    width: 100%;
+}
+.red {
+    color: red;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19.2px;
+      
+}
+
+.h1 {
+    font-size: 32px;
+    line-height: 3.5rem;
+    width: 80%;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+
+.para-log-solution {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0rem; 
+    padding-bottom: 20px; 
+
+}
+
+.type {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 600;
+}
+
+/* TYPES OF LOGISTICS */
+
+.more-type {
+    font-size: 32px;
+    font-weight: 600;
+}
+.more-types-logistics {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    
+    width: 87%;
+    margin: 0 auto;
+}
+
+.grid p{
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.img1 {
+    width: 100%;
+    /* grid-column-gap: -30px; */
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+}
+
+.grid {
+    padding: 10px;
+    
+}
+
+/* DELIVERY QUOTE */
+
+.delivery-background {
+    background-color:  #FFBF14;
+    height: 130px;
+    padding: 20px;
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+.delivery{
+    display: flex;
+}
+
+.delivery-text {
+    padding: 20px 94px;
+}
+
+.hh4 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.mybtn {
+    margin-left: auto;
+    padding: 20px;
+}
+
+/* WHY US */
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 85%;
+    
+}
+
+.flex {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+.reason {
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.context {
+    max-width: 100%;
+}
+
+.context p {
+    line-height: 19.2px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hh44 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding-bottom: 10px;
+    
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+}
+
+.img2 {
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.why-us1 {
+    padding-top: 10px;
+    padding-left: px;
+}
+
+
+/* FORM */
+
+.form1 {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 20;
+}
+
+.why-us1 {
+    max-width: 100%;
+    
+}
+
+.form {
+    display: grid; 
+    width: 621px;
+    gap: 20px 21px;
+}
+
+.form-right1 {
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #515151;
+    padding: 10px;
+    
+}
+
+.form-right1gap {
+    margin-left: 10px;
+}
+
+.h2a {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.message {
+    width: 621px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #515151;
+    padding: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.linespace {
+    line-height: 1.5;
+}
+.a {
+    color: #ffffff;
+}
+.a:hover {
+    color: #ffffff;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.images {
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+.footer-style {
+    width: 50%;
+}
+
+.quick-link {
+    width: 30%;
+}
+
+.images h3 {
+    margin-bottom: 10px;
+}
+
+.images ul {
+    list-style-type: none;
+    line-height: 19.2px;
+    font-weight: 400;
+}
+
+.images p {
+    line-height: 19.2px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.images img{
+    max-width: 120px;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.input {
+    background-color: #000000;
+    color: #E5E5E5;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer > p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+    
+
+/* Media screen */
+@media (max-width: 1000px) {
+    /* SCREEN MEDIA */
+    body {
+        font-size: 2rem;
+    }
+    h1,h2{
+        font-size: 2rem;
+    }
+
+    h1 {
+        margin: auto;
+    }
+   
+    .slicknav, .request {
+        display: none;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 20px;
+        width: auto;
+    }
+
+    .hamburger  {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+        width: 15.5px;
+        height: 14.5px;
+    }
+    
+    .hamburger span {
+        display: block;
+        background-color: #000;
+        width: 15.5px;
+        height: 14.5px;
+    }
+
+    /* content-description */
+    .content-description {
+        background-size: cover;
+        padding: 0;
+        text-align: center;
+    }
+
+
+    .logistics{
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img-box,.content-log {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-log {
+        padding: 20px;
+
+    }
+
+    .red {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .h1{
+        margin: auto;
+        width: 100%;
+    }
+
+    .para-log-solution {
+        text-align: left;
+        margin: 20px 0 20px 0;
+    }
+
+   .for-media {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   }
+   
+   /* TYPES OF LOGISTICS */
+   .more-type {
+    padding: 10px;
+   }
+
+   .more-types-logistics {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+   }
+   .img1 {
+    width: 100%;
+    min-height: 30vh;
+   }
+
+    /* DELIVERY QUOTE */
+   .delivery-background {
+        height: auto;
+        background-size:cover;
+    
+
+   }
+   .delivery{
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .delivery-text {
+    padding: 20px 0;
+    text-align: center;
+    font-size: inherit;
+   }
+    .mybtn  {
+   margin: 0 auto;
+   }
+    
+   
+    /* WHY US */
+    .form1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+    .why-us1 > h2{
+        text-align: center;
+    }
+/*     .context{
+        width: 100%;
+        display: grid;
+        align-content: center;
+        justify-content: flex-start;
+        margin-left: -20px;
+    } */
+    .flex{
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+       
+    }
+    .reason, .context {
+        display: grid;
+        align-content: flex-start;
+        justify-content: flex-start;
+        font-size: 5rem;
+    }
+
+    .reason {
+        width: 25%;
+        margin-left: -100px;
+        margin-top: 10px;
+    }
+
+    .context {
+        width: 100%;
+        margin: auto;
+    }
+
+
+/* REQUEST A QUOTE */
+    .quote {
+        display: block;
+    }
+    .right  {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    .message{
+        width: 100%;
+    }
+    .quote {
+        text-align: center;
+    }
+    .submit{
+        margin: 0 21%;
+    }
+
+.right > input{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-right1 {
+    gap: 20px;
+}
+
+  
+
+  
+
+
+
+
+
+    
+
+    /*FOOTER*/
+    footer {
+        min-height: auto;
+    }
+    .footer-wrapper {
+        display: grid;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .images {   
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+
+    .images1 img {
+        min-width: 90%;
+    }
+
+    .news {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
